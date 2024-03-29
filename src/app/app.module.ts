@@ -33,9 +33,11 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTreeModule } from '@angular/material/tree';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, AboutComponent],
+  declarations: [AppComponent, DashboardComponent, AboutComponent, RegisterComponent, LoginComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
