@@ -6,38 +6,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatCardModule } from '@angular/material/card';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutComponent } from './about/about.component';
-import { MatTabsModule } from '@angular/material/tabs';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSortModule } from '@angular/material/sort';
-import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatStepperModule } from '@angular/material/stepper';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatRadioModule } from '@angular/material/radio';
-import { MatNativeDateModule } from '@angular/material/core';
-import { MatSliderModule } from '@angular/material/slider';
+import {  ReactiveFormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatTreeModule } from '@angular/material/tree';
-import { ScrollingModule } from '@angular/cdk/scrolling';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { AuthorGridComponent } from './author-grid/author-grid.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, AboutComponent, RegisterComponent, LoginComponent],
+  declarations: [AppComponent, DashboardComponent, AboutComponent, RegisterComponent, LoginComponent, AuthorGridComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -45,31 +33,16 @@ import { LoginComponent } from './login/login.component';
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule,
-    MatTabsModule,
     MatSidenavModule,
     MatListModule,
     MatToolbarModule,
     MatTooltipModule,
     MatInputModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatProgressSpinnerModule,
-    MatStepperModule,
-    MatDialogModule,
     AppRoutingModule,
-    MatSelectModule,
-    MatCheckboxModule,
-    DragDropModule,
-    MatRadioModule,
-    MatSliderModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
     ReactiveFormsModule,
     MatGridListModule,
-    MatTreeModule,
-    ScrollingModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent],
