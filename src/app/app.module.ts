@@ -15,17 +15,28 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSortModule } from '@angular/material/sort';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
-import {  ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { AuthorGridComponent } from './author-grid/author-grid.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
-
+import { MatExpansionModule } from '@angular/material/expansion';
+import { JobComponent } from './job/job.component';
+import { PublisherComponent } from './publisher/publisher.component';
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, AboutComponent, RegisterComponent, LoginComponent, AuthorGridComponent],
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    AboutComponent,
+    RegisterComponent,
+    LoginComponent,
+    AuthorGridComponent,
+    JobComponent,
+    PublisherComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -42,7 +53,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     ReactiveFormsModule,
     MatGridListModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
